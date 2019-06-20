@@ -1,5 +1,5 @@
 # hexo-theme-minimalist
-Minimalist theme for Hexo.
+Minimalist theme for Hexo. Write using pug and less.
 
 ## Installation
 
