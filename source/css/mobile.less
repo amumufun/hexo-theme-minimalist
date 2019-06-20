@@ -1,0 +1,46 @@
+@media screen and (max-width: 479px) {
+  #header {
+    &-inner {
+      padding: 0 16px;
+    }
+  }
+  .recent-post-item {
+    padding: 16px;
+    margin-top: 8px;
+    border-radius: none;
+
+    .post-title {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 1.6;
+    }
+    .post-date {
+      margin: 10px 0;
+      color: @color-grey;
+      font-size: 14px;
+    }
+  }
+  #post {
+    margin-top: 8px;
+    padding: 8px 16px;
+
+    img {
+      display: block;
+      width: auto;
+      max-width: 100%;
+      margin: 0 auto;
+
+      & + img {
+        margin-top: 8px;
+      }
+    }
+    .header-anchor {
+      display: none;
+    }
+  }
+  #footer {
+    margin-top: 8px;
+    padding: 16px 0;
+  }
+
+}

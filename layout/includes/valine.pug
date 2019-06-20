@@ -1,0 +1,14 @@
+if theme.valine.enable
+	script(src='//cdn1.lncld.net/static/js/3.0.4/av-min.js')
+	script(src='/Valine.min.js')
+	script.
+		new Valine({
+			el: '#vcomments',
+			appId: '#{theme.valine.appId}',
+			appKey: '#{theme.valine.appKey}',
+			placeholder: '来了，就留下点什么吧~',
+			avatar: 'retro',
+			pageSize: 10,
+			recordIP: true,
+		})
+		

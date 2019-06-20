@@ -1,0 +1,6 @@
+header#header
+  .container#header-inner
+    a#logo(href=url_for())= config.title
+    nav
+      each url, label in theme.menu
+        a(href=url)= label

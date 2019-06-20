@@ -1,0 +1,5 @@
+each post in page.posts.sort('date', -1).limit(10).toArray()
+  .recent-post-item
+    a.post-title(href=url_for(post.path))= post.title
+    p.post-date= post.date.format("YYYY-MM-DD")
+    p= post.description

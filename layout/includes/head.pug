@@ -1,0 +1,25 @@
+- var pageTitle = page.title || config.subtitle || ''
+- if (is_archive()) pageTitle = 'Archives'
+- if (is_tag()) pageTitle = 'Tag: ' + page.tag
+- if (is_category()) pageTitle = 'Category: ' + page.category
+- if (is_month()) pageTitle += ': ' + page.month + '/' + page.year
+- if (is_year()) pageTitle += ': ' + page.year
+- pageTitle += config.title
+
+head
+  meta(charset='utf-8')
+  include google-analytics.pug
+  title= pageTitle
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  if theme.highlight
+    link(rel='stylesheet', href= 'highlight-theme/' + theme.highlight + '.css')
+  // common stylesheets, from _config.yml
+  if theme.stylesheets !== undefined && theme.stylesheets.length > 0
+    each url in theme.stylesheets
+      link(rel='stylesheet', href= url)
+  // page stylesheets, from font matter
+  if page.stylesheets !== undefined && page.stylesheets.length > 0
+    each url in page.stylesheets
+      link(rel='stylesheet', href= url)
+  block csslink
+  link(rel='icon' href= theme.favicon)

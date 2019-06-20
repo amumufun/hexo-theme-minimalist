@@ -1,0 +1,37 @@
+
+# html lang
+language: zh-CN
+
+# main menu navigation
+menu:
+  Archives: /archives
+  About: /about
+
+# stylesheets loaded in the <head>
+stylesheets:
+- /css/style.css
+
+# scripts loaded in the end of the body
+scripts:
+- /js/test.js
+
+#favicon
+favicon: /favicon.ico
+
+# highlight style
+highlight: rainbow
+# highlight: magula
+# highlight: github
+# highlight: foundation
+# highlight: brown-paper
+# highlight: agate
+# highlight: tomorrow-night-eighties
+
+google_analytics: 
+
+cnzz: 
+
+valine:
+  enable: false
+  appId: 
+  appKey: 

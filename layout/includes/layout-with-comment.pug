@@ -1,0 +1,19 @@
+doctype html
+html(lang=config.language)
+  include head.pug
+  body
+    include header.pug
+    block content
+    
+    if theme.valine.enable
+    .container
+      #vcomments
+    include footer.pug
+    if theme.scripts !== undefined && theme.scripts.length > 0
+      each url in theme.scripts
+        script(src= url)
+    if page.scripts !== undefined && page.scripts.length > 0
+      each url in page.scripts
+        script(src= url)
+    include cnzz.pug
+    include valine.pug

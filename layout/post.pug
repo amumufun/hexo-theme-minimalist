@@ -1,0 +1,9 @@
+extends includes/layout-with-comment.pug
+
+block content
+  .container
+    article#post
+      h1.title= page.title
+      p.date= page.date.format("YYYY-MM-DD")
+      != page.content
+    //#paginator!= paginator()
